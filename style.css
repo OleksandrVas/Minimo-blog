@@ -1,0 +1,276 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+[class*='col-'] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 757px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .col-xs-12 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  #header .minimo-bgi {
+    margin-top: 45px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header .minimo-bgi div {
+    background-image: url(img/minimo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20px;
+    margin-bottom: 25px;
+  }
+  #header .menu-header {
+    width: 100%;
+  }
+  #header .menu-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #header .menu-header ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    color: #626262;
+  }
+  #header .menu-header ul li a:hover {
+    color: #bd3f3f;
+  }
+  #slaider {
+    margin-top: 50px;
+  }
+  #slaider .col-xs-12 div {
+    height: 98%;
+  }
+  #slaider .col-xs-12 div:hover {
+    background-color: rgba(121, 75, 75, 0.9);
+  }
+  #slaider .col-xs-12 div img {
+    width: 100%;
+    opacity: 0.9;
+  }
+  #perfect-weekend {
+    margin-top: 50px;
+  }
+  #perfect-weekend .photodiary {
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 11px;
+    color: #b4ad9e;
+    margin-bottom: 30px;
+  }
+  #perfect-weekend .perfect-weekend-getway {
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    color: #626262;
+    font-weight: 400;
+  }
+  #perfect-weekend .perfect-text {
+    margin-top: 30px;
+    font-size: 14px;
+    font-family: "Playfair Display", serif;
+    color: #626262;
+    line-height: 17px;
+  }
+  #more-than {
+    margin-top: 50px;
+  }
+  #more-than .photodiary {
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 11px;
+    color: #b4ad9e;
+    margin-bottom: 30px;
+  }
+  #more-than .container-box {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #more-than .container-box .container-more-than {
+    width: 284px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #more-than .container-box .container-more-than .life-style {
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 11px;
+    color: #b4ad9e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #more-than .container-box .container-more-than .more-than-text {
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+    color: #626262;
+  }
+  #more-than .container-box .container-more-than .more-than-lorem {
+    margin-top: 20px;
+    color: #626262;
+    font-family: "Playfair Display", serif;
+    line-height: 18px;
+    font-size: 14px;
+  }
+  #sign-up {
+    margin-top: 50px;
+  }
+  #sign-up .container-sign-up {
+    position: relative;
+    width: 230px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  #sign-up .container-sign-up div {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 60px;
+  }
+  #sign-up .container-sign-up input {
+    width: 100%;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 25px;
+  }
+  #sign-up .container-sign-up .arrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: -26px;
+    right: 0;
+    background-image: url(img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 20px;
+  }
+  #more-than-bottom {
+    margin-top: 50px;
+  }
+  #more-than-bottom .container-more-than {
+    width: 284px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #more-than-bottom .container-more-than .life-style {
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 11px;
+    color: #b4ad9e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #more-than-bottom .container-more-than .more-than-text {
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+    color: #626262;
+  }
+  #more-than-bottom .container-more-than .more-than-lorem {
+    margin-top: 20px;
+    color: #626262;
+    font-family: "Playfair Display", serif;
+    line-height: 18px;
+    font-size: 14px;
+  }
+  #more-than-bottom .load-more {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #more-than-bottom .load-more button {
+    color: #626262;
+    font-size: 16px;
+    padding: 11px 15px;
+  }
+  #footer {
+    margin-bottom: 15px;
+  }
+  #footer .col-xs-7 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.3333333%;
+            flex: 0 0 58.3333333%;
+    max-width: 58.3333333%;
+  }
+  #footer .col-xs-7 a:first-child {
+    margin-right: 5px;
+  }
+  #footer .col-xs-7 a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #000000;
+    font-family: "Playfair Display", serif;
+  }
+  #footer .col-xs-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.6666667%;
+            flex: 0 0 41.6666667%;
+    max-width: 41.6666667%;
+    text-align: right;
+  }
+  #footer .col-xs-5 .follow-footer {
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    color: #626262;
+    font-size: 11px;
+    margin-right: 10px;
+  }
+  #footer .col-xs-5 .facebook {
+    background-image: url(img/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 20px;
+    margin-right: 5px;
+  }
+  #footer .col-xs-5 .twitter {
+    background-image: url(img/twitter.png);
+    background-position: 0 1px;
+    margin-right: 5px;
+    padding-top: 1px;
+  }
+  #footer .col-xs-5 .instagram {
+    background-image: url(img/instagram.png);
+    margin-right: 20px;
+    background-position: 0 -1px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
