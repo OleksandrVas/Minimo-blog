@@ -42,6 +42,10 @@
     height: 23px;
     margin-bottom: 25px;
     text-align: left;
+    cursor: pointer;
+  }
+  #header .col-sm-6 .menu-header {
+    max-width: 95%;
   }
   #header .col-sm-6 .menu-header ul {
     display: -webkit-box;
@@ -72,10 +76,17 @@
     margin-left: auto;
     margin-right: auto;
   }
-  #slaider .col-sm-12 div img {
-    width: 80%;
+  #slaider .col-sm-12 div {
     margin-left: 10%;
     margin-right: 10%;
+    height: 99%;
+  }
+  #slaider .col-sm-12 div:hover {
+    background: rgba(121, 75, 75, 0.9);
+  }
+  #slaider .col-sm-12 div img {
+    width: 100%;
+    opacity: 0.9;
   }
   #perfect-weekend {
     margin-top: 100px;
@@ -229,9 +240,16 @@
   }
   #more-than-bottom .load-more button {
     font-size: 20px;
-    color: "Playfair Display", serif;
+    font-family: "Playfair Display", serif;
     color: #626262;
     padding: 10px 17px;
+    border: 1px solid #626262;
+    border-radius: 7px;
+  }
+  #more-than-bottom .load-more button:hover {
+    background-color: #737070;
+    border: 1px solid #737070;
+    color: white;
   }
   #footer {
     margin-top: 150px;
@@ -249,6 +267,9 @@
     color: #626262;
     margin-right: 25px;
   }
+  #footer .col-sm-6:first-child a:hover {
+    color: #bd3f3f;
+  }
   #footer .col-sm-6:last-child {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -260,6 +281,9 @@
     text-decoration: none;
     color: #626262;
     margin-right: 25px;
+  }
+  #footer .col-sm-6:last-child a:hover {
+    color: #bd3f3f;
   }
   #footer .col-sm-6:last-child .facebook {
     background-image: url(img/facebook.png);
@@ -275,6 +299,37 @@
     background-image: url(img/instagram.png);
     background-position: 0 0;
     padding-top: 1px;
+  }
+}
+
+@media (min-width: 992px) {
+  #more-than .container-more-than img {
+    width: 100%;
+  }
+  #more-than-bottom .container-more-than img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #perfect-weekend {
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+  #perfect-weekend .perfect-text {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  #more-than .col-md-6 .container-box .container-more-than .more-than-text {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  #more-than .col-md-6 .container-box .container-more-than .more-than-lorem {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  #sign-up .container-sign-up div {
+    font-size: 35px;
   }
 }
 

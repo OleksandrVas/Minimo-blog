@@ -49,13 +49,14 @@ $obunut-color:#b4ad9e;
                 background-repeat: no-repeat;
                 height: 23px;
                 margin-bottom: 25px;
-                text-align: left;    
+                text-align: left;
+                cursor: pointer;
                 }
-                
             }
         }
         .col-sm-6 {
             .menu-header{
+                max-width: 95%;
                 ul{
                     
                     display: flex;
@@ -86,11 +87,15 @@ $obunut-color:#b4ad9e;
             margin-left: auto;
                     margin-right: auto;
             div{
+                margin-left: 10%;
+                margin-right: 10%;
+                height: 99%;
+                &:hover{
+                        background: $bgcHover;
+                    }   
                 img{
-                    width: 80%;
-                    margin-left: 10%;
-                    margin-right: 10%;
-                    
+                    width: 100%;
+                    opacity: 0.9;
                 }
             }
         }
@@ -229,9 +234,16 @@ $obunut-color:#b4ad9e;
             margin-left: auto;
             button{
                 font-size: 20px;
-                color: $playFair;
+                font-family: $playFair;
                 color: $main-color;
                 padding: 10px 17px;
+                border: 1px solid $main-color;
+                border-radius: 7px;
+                &:hover{
+                    background-color: #737070;
+                    border: 1px solid #737070;
+                    color: white;
+                }
             }
         }
     }
@@ -247,6 +259,9 @@ $obunut-color:#b4ad9e;
                 text-decoration: none;
                 color: $main-color;
                 margin-right: 25px;
+                &:hover {
+                    color: #bd3f3f;
+                }
             }
         }
         .col-sm-6:last-child{
@@ -257,6 +272,9 @@ $obunut-color:#b4ad9e;
                 text-decoration: none;
                 color: $main-color;
                 margin-right: 25px;
+                &:hover {
+                    color: #bd3f3f;
+                }
             }
             .facebook{
                 background-image: url(img/facebook.png);
@@ -280,11 +298,61 @@ $obunut-color:#b4ad9e;
 }
 
 @media (min-width:992px){
+    // header //////////////////////////////////||
     
+    // more-than //////////////////////////////////||
+    #more-than {
+        .container-more-than{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    // more-than-bottom ////////////////////////////||
+    #more-than-bottom {
+        .container-more-than{
+            img{
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (min-width:1200px){
-
+// perfect-weekend ///////////////////////////////////||
+    #perfect-weekend {
+        margin-right: 15%;
+        margin-left: 15%;
+        .perfect-text{
+                font-size: 16px;
+                line-height: 23px;
+        }
+    }
+    // more-than //////////////////////////||
+    #more-than {
+        .col-md-6{
+            .container-box{
+                .container-more-than{
+                    .more-than-text{
+                        font-size: 30px;
+                        letter-spacing: 1px;
+                    }
+                    .more-than-lorem{
+                        font-size: 17px;
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+    }
+    // sign-up ///////////////////////////||
+    #sign-up {
+        .container-sign-up{
+            div{
+                font-size: 35px;
+            }
+        }
+    }
 }
 
 
@@ -525,10 +593,7 @@ $obunut-color:#b4ad9e;
                 background-image: url(img/instagram.png);
                 margin-right: 20px;
                 background-position: 0 -1px;
-            }
-            
+                }
+            }    
         }
-        
-}
-
-}
+    }
