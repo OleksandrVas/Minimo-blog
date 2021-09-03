@@ -596,6 +596,26 @@ $obunut-color:#b4ad9e;
                 }
             }    
         }
+        .modal {
+            .modal-block{
+                max-width: 200px;
+                max-height: 200px;
+                .btn-close{
+                    font-size: 14px;
+                }
+                h1{
+                    font-size: 13px;
+                }
+                .form-field :first-child{
+                    margin-bottom: 10px;
+                }
+                .btn-recall{
+                    button{
+                        margin-top: -20px;
+                    }
+                }
+            }
+        }
     }
     .modal {
         position: fixed;
@@ -605,6 +625,7 @@ $obunut-color:#b4ad9e;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
         z-index: 100;
+        display: none;
         .modal-block {
             width: 400px;
             height: 200px;
@@ -645,15 +666,18 @@ $obunut-color:#b4ad9e;
                     padding: 9px 15px ;
                     text-transform: uppercase;
                     font-family: $playFair;
+                    cursor: pointer;
                     color: $main-color;
                     &:hover {
                         color: $obunut-color;
                     }
                 }
             }
-            
-            
-            
-            
         }
     }
+.show{
+    display: block;
+}
+.hide {
+    display: none;
+}
