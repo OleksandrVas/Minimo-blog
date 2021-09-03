@@ -569,4 +569,69 @@
     background-position: 0 -1px;
   }
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.modal .modal-block {
+  width: 400px;
+  height: 200px;
+  margin: 80px auto;
+  border: 1px solid gray;
+  background-color: white;
+  padding: 15px;
+}
+
+.modal .modal-block .btn-close {
+  text-align: right;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  color: #626262;
+}
+
+.modal .modal-block .btn-close:hover {
+  color: #b4ad9e;
+}
+
+.modal .modal-block h1 {
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.modal .modal-block .form-field {
+  display: inline;
+}
+
+.modal .modal-block .form-field input {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  border: none;
+}
+
+.modal .modal-block .btn-recall {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.modal .modal-block .btn-recall button {
+  padding: 9px 15px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  color: #626262;
+}
+
+.modal .modal-block .btn-recall button:hover {
+  color: #b4ad9e;
+}
 /*# sourceMappingURL=style.css.map */
