@@ -78,6 +78,22 @@ $obunut-color:#b4ad9e;
         }
         
     }
+    #new-slaider{
+        margin-top: 5px;
+        margin-right: auto;
+        margin-left: auto;
+        width:100%;
+        .slaider {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            div{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
     // slaider //////////////////////////////////////////||
     #slaider {
         margin-top: 25px;
@@ -90,12 +106,12 @@ $obunut-color:#b4ad9e;
                 margin-left: 10%;
                 margin-right: 10%;
                 height: 99%;
-                &:hover{
-                        background: $bgcHover;
-                    }   
+                // &:hover{
+                //         background: $bgcHover;
+                //     }   
                 img{
                     width: 100%;
-                    opacity: 0.9;
+                    // opacity: 0.9;
                 }
             }
         }
@@ -256,6 +272,7 @@ $obunut-color:#b4ad9e;
             flex: 0 0 50%;
             min-width: 50%;
             a{
+                font-size: 20px;
                 text-decoration: none;
                 color: $main-color;
                 margin-right: 25px;
@@ -268,7 +285,8 @@ $obunut-color:#b4ad9e;
             flex: 0 0 50%;
             min-width: 50%;
             text-align: right;
-            a{
+            .follow-footer{
+                font-size: 20px;
                 text-decoration: none;
                 color: $main-color;
                 margin-right: 25px;
@@ -277,20 +295,120 @@ $obunut-color:#b4ad9e;
                 }
             }
             .facebook{
-                background-image: url(img/facebook.png);
-                background-repeat: no-repeat;
-                background-position: 0 -2px;
-                padding-left: 20px;
+                margin-right: 25px;
+                img{
+                    background-color: #2462af;
+                    width: 20px;
+                    margin-bottom: -3px;
+                    &:hover{
+                        background-color:#273a52 ;
+                    }
+                }
+
             }
             .twitter{
-                background-image: url(img/twitter.png);
-                background-position: 0 0;
+                margin-right: 25px;
+                img{
+                    background-color: #2462af;
+                    width: 20px;
+                    margin-bottom: -3px;
+                    &:hover{
+                        background-color:#273a52 ;
+                    }
+                }
             }
-            .instagram{
-                background-image: url(img/instagram.png);
-                background-position: 0 0;
-                padding-top: 1px;
+            .gmail{
+                margin-right: 25px;
+                img{
+                    background-color: #2462af;
+                    width: 20px;
+                    margin-bottom: -3px;
+                    &:hover{
+                        background-color:#273a52 ;
+                    }
+                }
             }           
+        }
+    }
+    .special-width {
+        width: 100%;
+    }
+    .modal {
+        .modal-block{
+            .btn-close{
+                font-size: 14px;
+            }
+            h1{
+                font-size: 13px;
+            }
+            .form-field :first-child{
+                margin-bottom: 10px;
+            }
+            .btn-recall{
+                button{
+                    margin-top: -20px;
+                }
+            }
+        }
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        display: none;
+        .modal-block {
+            width: 600px;
+            height: 400px;
+            margin: 80px auto;
+            border: 1px solid gray;
+            background-color: white;
+            padding: 15px;
+            .btn-close {
+                text-align: right;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-family: $playFair;
+                color: $main-color;
+                &:hover {
+                    color: $obunut-color;
+                }
+            }    
+            h1{
+                font-size: 30px;
+                text-transform: uppercase;
+                font-family: $playFair;
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 25px;
+            }
+            .form-field {
+                margin: 50px;
+                input {
+                    font-family: $playFair;
+                    color: $main-color;
+                    border: none;
+                    padding: 15px;
+                    width: 100%;
+                }
+            }
+            .btn-recall {
+                text-align: center;
+                margin-top: 25px;
+                button {
+                    padding: 15px 20px ;
+                    text-transform: uppercase;
+                    font-family: $playFair;
+                    cursor: pointer;
+                    color: $main-color;
+                    &:hover {
+                        color: $obunut-color;
+                    }
+                }
+            }
         }
     }
 }
@@ -398,20 +516,15 @@ $obunut-color:#b4ad9e;
         }
     }
     // #slaider ///////////////////////////||
-    #slaider {
-        margin-top: 50px;
-        .col-xs-12{
-            div{
-                height: 98%;
-                &:hover{
-                    background-color: $bgcHover;
-                }
-                img{
-                width: 100%; 
-                opacity: 0.9;
-                }  
+    #new-slaider {
+        margin-top: 10px;
+        .slaider{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            .special-width{
+                width: 100%;
             }
-            
         }
     }
     // #perfect-weecend///////////////////////||
@@ -544,7 +657,7 @@ $obunut-color:#b4ad9e;
         }
         .load-more {
             margin-top: 50px;
-            margin-bottom: 200px;
+            margin-bottom: 150px;
             margin-left: auto;
             margin-right: auto;
             button{
@@ -561,6 +674,7 @@ $obunut-color:#b4ad9e;
             flex:0 0 58.3333333%;
             max-width:58.3333333% ;
             a:first-child{
+                font-size: 11px;
                 margin-right: 5px;
             }
             a{
@@ -579,32 +693,48 @@ $obunut-color:#b4ad9e;
                 font-family: $playFair;
                 color: $main-color;
                 font-size: 11px;
-                margin-right: 10px;
-            }
-            .facebook {
-                background-image: url(img/facebook.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                padding-left: 20px;
                 margin-right: 5px;
+            }
+            .facebook{
+                margin-right: 0px;
+                img{
+                    background-color: #2462af;
+                    width: 15px;
+                    margin-bottom: -3px;
+                    &:hover{
+                        background-color:#273a52 ;
+                    }
+                }
+
             }
             .twitter{
-                background-image: url(img/twitter.png);
-                background-position: 0 1px;
-                margin-right: 5px;
-                padding-top: 1px;
-            }
-            .instagram {
-                background-image: url(img/instagram.png);
-                margin-right: 20px;
-                background-position: 0 -1px;
+                margin-right: 0px;
+                img{
+                    background-color: #2462af;
+                    width: 15px;
+                    margin-bottom: -3px;
+                    &:hover{
+                        background-color:#273a52 ;
+                    }
                 }
+            }
+            .gmail{
+                margin-right: 0px;
+                img{
+                    background-color: #2462af;
+                    width: 15px;
+                    margin-bottom: -3px;
+                    &:hover{
+                        background-color:#273a52 ;
+                    }
+                }
+            }
             }    
         }
         .modal {
             .modal-block{
-                max-width: 200px;
-                max-height: 200px;
+                max-width: 300px;
+                max-height: 300px;
                 .btn-close{
                     font-size: 14px;
                 }
@@ -621,60 +751,63 @@ $obunut-color:#b4ad9e;
                 }
             }
         }
-    }
-    .modal {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
-        z-index: 100;
-        display: none;
-        .modal-block {
-            width: 400px;
-            height: 200px;
-            margin: 80px auto;
-            border: 1px solid gray;
-            background-color: white;
-            padding: 15px;
-            .btn-close {
-                text-align: right;
-                cursor: pointer;
-                text-transform: uppercase;
-                font-family: $playFair;
-                color: $main-color;
-                &:hover {
-                    color: $obunut-color;
-                }
-            }    
-            h1{
-                
-                text-transform: uppercase;
-                font-family: $playFair;
-                text-align: center;
-                margin-top: 15px;
-                margin-bottom: 25px;
-            }
-            .form-field {
-                display: inline;
-                input {
-                    font-family: $playFair;
-                    color: $main-color;
-                    border: none;
-                }
-            }
-            .btn-recall {
-                text-align: center;
-                margin-top: 25px;
-                button {
-                    padding: 9px 15px ;
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            display: none;
+            .modal-block {
+                margin: 80px auto;
+                border: 1px solid gray;
+                background-color: white;
+                padding: 15px;
+                .btn-close {
+                    font-size: 20px;
+                    text-align: right;
+                    cursor: pointer;
                     text-transform: uppercase;
                     font-family: $playFair;
-                    cursor: pointer;
                     color: $main-color;
                     &:hover {
                         color: $obunut-color;
+                    }
+                }    
+                h1{
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    font-family: $playFair;
+                    text-align: center;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+                .form-field {
+                    
+                    input {
+                        font-size: 18px;
+                        font-family: $playFair;
+                        color: $main-color;
+                        border: none;
+                        padding: 10px;
+                        width: 100%;
+                    }
+                }
+                .btn-recall {
+                    text-align: center;
+                    margin-top: 25px;
+                    button {
+                        font-size: 18px;
+                        padding: 11px 14px ;
+                        text-transform: uppercase;
+                        font-family: $playFair;
+                        cursor: pointer;
+                        color: $main-color;
+                        &:hover {
+                            color: $obunut-color;
+                        }
                     }
                 }
             }

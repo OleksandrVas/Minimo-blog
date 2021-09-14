@@ -22,3 +22,15 @@ function showModalSay(){
     modalWindow.classList.toggle("show")
     alert("Спасибо, мы вам перезвоним !")
 }
+
+
+// slick 
+$(document).ready(function(){
+    $('.slaider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+  });

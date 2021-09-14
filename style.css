@@ -65,6 +65,20 @@
   #header .col-sm-6 .menu-header ul li a:hover {
     color: #bd3f3f;
   }
+  #new-slaider {
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  #new-slaider .slaider {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #new-slaider .slaider div img {
+    width: 100%;
+  }
   #slaider {
     margin-top: 25px;
   }
@@ -81,12 +95,8 @@
     margin-right: 10%;
     height: 99%;
   }
-  #slaider .col-sm-12 div:hover {
-    background: rgba(121, 75, 75, 0.9);
-  }
   #slaider .col-sm-12 div img {
     width: 100%;
-    opacity: 0.9;
   }
   #perfect-weekend {
     margin-top: 100px;
@@ -263,6 +273,7 @@
     min-width: 50%;
   }
   #footer .col-sm-6:first-child a {
+    font-size: 20px;
     text-decoration: none;
     color: #626262;
     margin-right: 25px;
@@ -277,28 +288,122 @@
     min-width: 50%;
     text-align: right;
   }
-  #footer .col-sm-6:last-child a {
+  #footer .col-sm-6:last-child .follow-footer {
+    font-size: 20px;
     text-decoration: none;
     color: #626262;
     margin-right: 25px;
   }
-  #footer .col-sm-6:last-child a:hover {
+  #footer .col-sm-6:last-child .follow-footer:hover {
     color: #bd3f3f;
   }
   #footer .col-sm-6:last-child .facebook {
-    background-image: url(img/facebook.png);
-    background-repeat: no-repeat;
-    background-position: 0 -2px;
-    padding-left: 20px;
+    margin-right: 25px;
+  }
+  #footer .col-sm-6:last-child .facebook img {
+    background-color: #2462af;
+    width: 20px;
+    margin-bottom: -3px;
+  }
+  #footer .col-sm-6:last-child .facebook img:hover {
+    background-color: #273a52;
   }
   #footer .col-sm-6:last-child .twitter {
-    background-image: url(img/twitter.png);
-    background-position: 0 0;
+    margin-right: 25px;
   }
-  #footer .col-sm-6:last-child .instagram {
-    background-image: url(img/instagram.png);
-    background-position: 0 0;
-    padding-top: 1px;
+  #footer .col-sm-6:last-child .twitter img {
+    background-color: #2462af;
+    width: 20px;
+    margin-bottom: -3px;
+  }
+  #footer .col-sm-6:last-child .twitter img:hover {
+    background-color: #273a52;
+  }
+  #footer .col-sm-6:last-child .gmail {
+    margin-right: 25px;
+  }
+  #footer .col-sm-6:last-child .gmail img {
+    background-color: #2462af;
+    width: 20px;
+    margin-bottom: -3px;
+  }
+  #footer .col-sm-6:last-child .gmail img:hover {
+    background-color: #273a52;
+  }
+  .special-width {
+    width: 100%;
+  }
+  .modal .modal-block .btn-close {
+    font-size: 14px;
+  }
+  .modal .modal-block h1 {
+    font-size: 13px;
+  }
+  .modal .modal-block .form-field :first-child {
+    margin-bottom: 10px;
+  }
+  .modal .modal-block .btn-recall button {
+    margin-top: -20px;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none;
+  }
+  .modal .modal-block {
+    width: 600px;
+    height: 400px;
+    margin: 80px auto;
+    border: 1px solid gray;
+    background-color: white;
+    padding: 15px;
+  }
+  .modal .modal-block .btn-close {
+    text-align: right;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    color: #626262;
+  }
+  .modal .modal-block .btn-close:hover {
+    color: #b4ad9e;
+  }
+  .modal .modal-block h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .modal .modal-block .form-field {
+    margin: 50px;
+  }
+  .modal .modal-block .form-field input {
+    font-family: "Playfair Display", serif;
+    color: #626262;
+    border: none;
+    padding: 15px;
+    width: 100%;
+  }
+  .modal .modal-block .btn-recall {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .modal .modal-block .btn-recall button {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+    color: #626262;
+  }
+  .modal .modal-block .btn-recall button:hover {
+    color: #b4ad9e;
   }
 }
 
@@ -378,18 +483,16 @@
   #header .menu-header ul li a:hover {
     color: #bd3f3f;
   }
-  #slaider {
-    margin-top: 50px;
+  #new-slaider {
+    margin-top: 10px;
   }
-  #slaider .col-xs-12 div {
-    height: 98%;
+  #new-slaider .slaider {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  #slaider .col-xs-12 div:hover {
-    background-color: rgba(121, 75, 75, 0.9);
-  }
-  #slaider .col-xs-12 div img {
+  #new-slaider .slaider .special-width {
     width: 100%;
-    opacity: 0.9;
   }
   #perfect-weekend {
     margin-top: 50px;
@@ -526,7 +629,7 @@
   }
   #more-than-bottom .load-more {
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -545,6 +648,7 @@
     max-width: 58.3333333%;
   }
   #footer .col-xs-7 a:first-child {
+    font-size: 11px;
     margin-right: 5px;
   }
   #footer .col-xs-7 a {
@@ -565,29 +669,44 @@
     font-family: "Playfair Display", serif;
     color: #626262;
     font-size: 11px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   #footer .col-xs-5 .facebook {
-    background-image: url(img/facebook.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-left: 20px;
-    margin-right: 5px;
+    margin-right: 0px;
+  }
+  #footer .col-xs-5 .facebook img {
+    background-color: #2462af;
+    width: 15px;
+    margin-bottom: -3px;
+  }
+  #footer .col-xs-5 .facebook img:hover {
+    background-color: #273a52;
   }
   #footer .col-xs-5 .twitter {
-    background-image: url(img/twitter.png);
-    background-position: 0 1px;
-    margin-right: 5px;
-    padding-top: 1px;
+    margin-right: 0px;
   }
-  #footer .col-xs-5 .instagram {
-    background-image: url(img/instagram.png);
-    margin-right: 20px;
-    background-position: 0 -1px;
+  #footer .col-xs-5 .twitter img {
+    background-color: #2462af;
+    width: 15px;
+    margin-bottom: -3px;
+  }
+  #footer .col-xs-5 .twitter img:hover {
+    background-color: #273a52;
+  }
+  #footer .col-xs-5 .gmail {
+    margin-right: 0px;
+  }
+  #footer .col-xs-5 .gmail img {
+    background-color: #2462af;
+    width: 15px;
+    margin-bottom: -3px;
+  }
+  #footer .col-xs-5 .gmail img:hover {
+    background-color: #273a52;
   }
   .modal .modal-block {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
   }
   .modal .modal-block .btn-close {
     font-size: 14px;
@@ -601,73 +720,64 @@
   .modal .modal-block .btn-recall button {
     margin-top: -20px;
   }
-}
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 100;
-  display: none;
-}
-
-.modal .modal-block {
-  width: 400px;
-  height: 200px;
-  margin: 80px auto;
-  border: 1px solid gray;
-  background-color: white;
-  padding: 15px;
-}
-
-.modal .modal-block .btn-close {
-  text-align: right;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: "Playfair Display", serif;
-  color: #626262;
-}
-
-.modal .modal-block .btn-close:hover {
-  color: #b4ad9e;
-}
-
-.modal .modal-block h1 {
-  text-transform: uppercase;
-  font-family: "Playfair Display", serif;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 25px;
-}
-
-.modal .modal-block .form-field {
-  display: inline;
-}
-
-.modal .modal-block .form-field input {
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  border: none;
-}
-
-.modal .modal-block .btn-recall {
-  text-align: center;
-  margin-top: 25px;
-}
-
-.modal .modal-block .btn-recall button {
-  padding: 9px 15px;
-  text-transform: uppercase;
-  font-family: "Playfair Display", serif;
-  cursor: pointer;
-  color: #626262;
-}
-
-.modal .modal-block .btn-recall button:hover {
-  color: #b4ad9e;
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    display: none;
+  }
+  .modal .modal-block {
+    margin: 80px auto;
+    border: 1px solid gray;
+    background-color: white;
+    padding: 15px;
+  }
+  .modal .modal-block .btn-close {
+    font-size: 20px;
+    text-align: right;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    color: #626262;
+  }
+  .modal .modal-block .btn-close:hover {
+    color: #b4ad9e;
+  }
+  .modal .modal-block h1 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .modal .modal-block .form-field input {
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+    color: #626262;
+    border: none;
+    padding: 10px;
+    width: 100%;
+  }
+  .modal .modal-block .btn-recall {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .modal .modal-block .btn-recall button {
+    font-size: 18px;
+    padding: 11px 14px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    cursor: pointer;
+    color: #626262;
+  }
+  .modal .modal-block .btn-recall button:hover {
+    color: #b4ad9e;
+  }
 }
 
 .show {

@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <!-- slick -->
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     
     <title>Minimo Blog</title>
 </head>
+
 <body>
     <header id="header">
         <div class="container">
@@ -37,17 +46,16 @@
             </div>
         </div>
     </header>
+
     <section>
-        <div id="slaider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <div><img src="img/Screenshot1.png" alt=""></div>
-                    </div>
-                </div>
+        <div id="new-slaider">
+            <div class="slaider">
+                <div><img src="img/desert1.jpg" alt=""  class="special-width"></div>
+                <div><img src="img/desert2.jpg" alt="" class="special-width"></div>
             </div>
         </div>
     </section>
+
     <section>
         <div id="perfect-weekend">
             <div class="container">
@@ -174,9 +182,9 @@
                 </div>
                 <div class="col-xs-5 col-sm-6">
                     <a href="follow" class="follow-footer">Follow</a>
-                    <a href="" class="facebook"></a>
-                    <a href="" class="facebook twitter"></a>
-                    <a href="" class="facebook instagram"></a>
+                    <a href="" class="facebook"><img src="img/facebook.png" alt=""></a>
+                    <a href="" class="facebook twitter"><img src="img/twitter.png" alt=""></a>
+                    <a href="" class="facebook gmail"><img src="img/gmail.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -199,6 +207,9 @@
             
         </div>
     </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
