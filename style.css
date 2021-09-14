@@ -333,7 +333,7 @@
   }
 }
 
-@media (max-width: 757px) {
+@media (max-width: 767px) {
   html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -429,10 +429,12 @@
     text-align: center;
   }
   #more-than .container-box .container-more-than {
-    width: 284px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+  }
+  #more-than .container-box .container-more-than img {
+    width: 100%;
   }
   #more-than .container-box .container-more-than .life-style {
     text-transform: uppercase;
@@ -459,7 +461,7 @@
   }
   #sign-up .container-sign-up {
     position: relative;
-    width: 230px;
+    width: 64%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -477,15 +479,30 @@
     padding-top: 10px;
     border-bottom: 2px solid black;
     margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+  }
+  #sign-up .container-sign-up input::-webkit-input-placeholder {
+    font-family: "Playfair Display", serif;
+  }
+  #sign-up .container-sign-up input:-ms-input-placeholder {
+    font-family: "Playfair Display", serif;
+  }
+  #sign-up .container-sign-up input::-ms-input-placeholder {
+    font-family: "Playfair Display", serif;
+  }
+  #sign-up .container-sign-up input::placeholder {
+    font-family: "Playfair Display", serif;
   }
   #more-than-bottom {
     margin-top: 50px;
   }
   #more-than-bottom .container-more-than {
-    width: 284px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+  }
+  #more-than-bottom .container-more-than img {
+    width: 100%;
   }
   #more-than-bottom .container-more-than .life-style {
     text-transform: uppercase;

@@ -290,13 +290,10 @@ $obunut-color:#b4ad9e;
                 background-image: url(img/instagram.png);
                 background-position: 0 0;
                 padding-top: 1px;
-            }
-            
+            }           
         }
     }
-
 }
-
 @media (min-width:992px){
     // header //////////////////////////////////||
     
@@ -358,7 +355,7 @@ $obunut-color:#b4ad9e;
 
 
 // only mobile 
-@media (max-width:757px){
+@media (max-width:767px){
     html, body {
             max-width: 100%;
             overflow-x: hidden;
@@ -455,10 +452,12 @@ $obunut-color:#b4ad9e;
             margin-bottom: 50px;
             text-align: center;
             .container-more-than{
-                width: 284px;
                 text-align: left;
                 margin-left: auto;
                 margin-right: auto;
+                img{
+                    width: 100%;
+                }
                 .life-style{
                 text-transform: uppercase;
                 font-family: $ubunut;
@@ -488,7 +487,7 @@ $obunut-color:#b4ad9e;
         margin-top: 50px;
         .container-sign-up{
             position: relative;
-            width: 230px;
+            width: 64%;
             margin-right: auto;
             margin-left: auto;
             text-align: center;
@@ -505,6 +504,10 @@ $obunut-color:#b4ad9e;
                 padding-top: 10px;
                 border-bottom: 2px solid black;
                 margin-bottom: 25px;
+                font-family: $playFair;
+                &::placeholder {
+                    font-family: $playFair;
+                }
             }
         }
     }
@@ -512,10 +515,12 @@ $obunut-color:#b4ad9e;
     #more-than-bottom{
         margin-top: 50px;
         .container-more-than{
-            width: 284px;
             text-align: left;
             margin-left: auto;
             margin-right: auto;
+            img {
+                width: 100%;
+            }
             .life-style{
             text-transform: uppercase;
             font-family: $ubunut;
